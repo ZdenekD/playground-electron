@@ -10,9 +10,12 @@
     "type": "git",
     "url": "git@github.com:ZdenekD/playground-electron.git"
   },
+  "main": "src/index.js",
   "scripts": {
     "reinstall": "rm -rf 'yarn.lock' 'package-lock.json' 'node_modules' && yarn",
-    "start": "electron ."
+    "start": "electron .",
+    "watch": "nodemon --exec 'electron .'",
+    "inspect": "nodemon --exec 'electron --inspect=9000 .'"
   },
   "engines": {
     "node": ">=12.0.0",
@@ -23,11 +26,13 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
+    "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "stylelint": "^13.2.0",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-csstree-validator": "^1.8.0",
     "stylelint-order": "^4.0.0"
-  }
+  },
+  "dependencies": {}
 }
