@@ -1,0 +1,33 @@
+{
+  "author": "zdenekd",
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "git@github.com:ZdenekD/playground-electron.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ZdenekD/playground-electron.git"
+  },
+  "scripts": {
+    "reinstall": "rm -rf 'yarn.lock' 'package-lock.json' 'node_modules' && yarn",
+    "start": "electron ."
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.9.0"
+  },
+  "devDependencies": {
+    "electron": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.2.0",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-csstree-validator": "^1.8.0",
+    "stylelint-order": "^4.0.0"
+  }
+}
