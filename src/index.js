@@ -7,7 +7,6 @@ let mainWindow
 
 // Create a new BrowserWindow when `app` is ready
 function createWindow() {
-
     mainWindow = new BrowserWindow({
         width: 1000, height: 800,
         webPreferences: {nodeIntegration: true}
@@ -21,7 +20,6 @@ function createWindow() {
 
     // Listen for window being closed
     mainWindow.on('closed', () => {
-        debugger;
         mainWindow = null
     })
 }
